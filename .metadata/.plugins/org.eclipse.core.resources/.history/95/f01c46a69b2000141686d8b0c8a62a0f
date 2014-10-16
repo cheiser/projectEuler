@@ -1,0 +1,20 @@
+import java.math.BigInteger;
+
+
+public class FactorialDigitSum {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static BigInteger getFactorialDigitSum(int factorialNumber){
+		BigInteger sum = new BigInteger("0");
+		
+		
+		return sum;
+	}
+}

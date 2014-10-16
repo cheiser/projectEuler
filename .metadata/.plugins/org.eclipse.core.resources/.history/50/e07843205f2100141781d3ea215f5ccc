@@ -1,0 +1,82 @@
+import java.util.ArrayList;
+
+
+public class AmicableNumbers {
+	
+	
+	// borde förmodligen skapa en bool matrix(initial 0 på alla positioner) där man indexerar som följande:
+	// [siffran man vill se "divisors" för][siffran man kollar om den är en "divisor"(har 1 om den kan det)]
+	
+	// borde dock kunna förenkla avservärt och endast skapa en array där man sparar "divisor" summan på
+	// motsvarande plats. t.ex. listan[6] ger 6 då "proper divisors" på 6 är 1, 2, 3 och dessa ger summan 6.
+	// sedan när man ska hitta "amicable pairs" så går man bara igenom listan från början och kollar på
+	// den platsen i listan som resultatet ger och om det står samma där som det(index) man står på
+	// så är dem ett par.
+	// man kan göra på olika sätt men det enklaste blir nog att dela slutresultatet med 2 då summan av paren
+	// kommer räknas 2 gånger.
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		System.out.println(findProperDivisorsSum(10));
+		System.out.println(amicableNumbersSum(10));
+	}
+	
+	/**
+	 * returns the sum of the amicable numbers
+	 * @param to specifies for how far one should look for amicable pairs
+	 * @return the sum of all the amicable pairs under the specified number
+	 */
+	public static long amicableNumbersSum(int to){
+		long sum = 0;
+		
+		int[] properDivisorsSum = new int[to];
+		
+		for(int i = 0; i < to; i++){
+			properDivisorsSum[i] += findProperDivisorsSum(i);
+		}
+		
+		for(int i = 0; i < to; i++){
+			System.out.println(properDivisorsSum[i]);
+		}
+		
+		for(int i = 0; i < to; i++){
+			try{
+				if(properDivisorsSum[properDivisorsSum[i]] == i){
+					sum += properDivisorsSum[i];
+				}
+			} catch(IndexOutOfBoundsException ex){
+				System.out.println("out of bound");
+				continue; // make sure that this behaves as you expect as it could cause problems if it skipped
+			}
+		}
+		
+		return sum/2;
+	}
+	
+	
+	
+	/**
+	 * returns the sum of the proper divisors for the number specified
+	 * @param number the number to find divisors for
+	 * @return the sum of all the proper divisors for the number
+	 */
+	public static int findProperDivisorsSum(int number){
+		int sum = 0;
+		
+		// should not need to look further than number/2 here but to be certain looks a little further
+		for(int i = 1; i < number-1; i++){
+			if(number % i == 0){
+				sum += i;
+			}
+		}
+		
+		
+		return sum;
+	}
+	
+	
+}

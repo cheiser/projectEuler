@@ -1,0 +1,21 @@
+
+public class CalendarCount {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static int countSundays(int yearFrom, int YearTo){
+		int sum = 0;
+		
+		
+		
+		
+		return sum;
+	}
+
+}

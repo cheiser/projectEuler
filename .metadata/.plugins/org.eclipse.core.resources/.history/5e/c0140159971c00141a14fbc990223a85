@@ -1,0 +1,36 @@
+
+public class LargeBinaryPower {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	/**
+	 * algoritm:
+	 * börja med två på position 499 och dubbla det, fortsätt dubbla tills man överstiger 10 då tar man resten(
+	 * alltså man lämnar det som kommer efter 1 i 10 och flyttar den 1'an) och flyttar ett steg åt vänster(
+	 * position 498) och dubblar först det som redan är där och gör ovanstående med rest m.m. och sedan adderar
+	 * den 1'an som man har från rest i nedanstående.
+	 * 
+	 * @param raiseTo
+	 * @return
+	 */
+	// raises the number 2 to the power of the specified number
+	public int[] largePowerBinary(int raiseTo){
+		int[] theNumber = new int[500];
+		int lastIndex = 499;
+		theNumber[lastIndex] = 1;
+		
+		
+		
+		return theNumber;
+	}
+	
+	
+	
+}

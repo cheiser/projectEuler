@@ -1,0 +1,17 @@
+
+public class DynamicProgrammingMaximumPathSum {
+	
+	/**
+	 * en möjlig algoritm:
+	 * Man börjar ifrån botten och går uppåt och sparar för varje 
+	 */
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

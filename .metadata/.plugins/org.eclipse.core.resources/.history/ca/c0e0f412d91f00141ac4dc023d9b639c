@@ -1,0 +1,43 @@
+
+public class CalendarCount {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static int countSundays(int yearFrom, int YearTo){
+		int sum = 0, currentYear = 1900, weekDay = 0;
+		// börja på 1900 talet och sätt det till måndag och räkna upp därifrån till man når datumet man är ute
+		// efter och börja därefter räkna söndagar.
+		// när man räknar upp kollar man bara de angivna reglerna, alltså 
+		/* 1 Jan 1900 was a Monday.
+			Thirty days has September,
+			April, June and November.
+			All the rest have thirty-one,
+			Saving February alone,
+			Which has twenty-eight, rain or shine.
+			And on leap years, twenty-nine.
+			A leap year occurs on any year evenly divisible by 4, but not on a century unless it is
+			divisible by 400.
+		 */
+		
+		for(int yearCount = 0; currentYear+yearCount < YearTo; yearCount++){
+			int daysOnYear = 365;
+			if((currentYear % 4 == 0 && (currentYear%100 != 0)) ||
+					(currentYear % 4 == 0 && (currentYear%400 == 0))){
+				daysOnYear = 366;
+			}
+			
+			for(int i = 0; i < daysOnYear; i++){
+				weekDay = (weekDay+1) % 7;
+			}
+		}
+		
+		return sum;
+	}
+
+}

@@ -1,0 +1,22 @@
+
+public class DynamicProgrammingMaximumPathSum {
+	
+	/**
+	 * en möjlig algoritm:
+	 * Man börjar ifrån botten och går uppåt och sparar för varje "nummer" ovanför sin siffra och den siffran
+	 * under som har högst värde. Detta bör resultera i att resultatet kommer stå på platsen längst upp.
+	 * Problemet blir att organisera det så man lätt kan hålla ordning på det så strukturen följer den som den
+	 * ser ut.
+	 * Jag borde kunna spara den som den ser ut i en array alltså den översta hamnar på (0, 0) dem två nästa på
+	 * (1, 0) och (1, 1)
+	 */
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
