@@ -7,6 +7,16 @@
 *.metadata
 *.db
 *.xml
+*.sln
+*.exe
+*.tlog
+*.cache
+
+
+# Folders
+obj/
+bin/
+Properties/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

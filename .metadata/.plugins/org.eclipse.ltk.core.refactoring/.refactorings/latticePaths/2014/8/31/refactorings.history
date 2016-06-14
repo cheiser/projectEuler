@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename method &apos;LatticePaths.numberOfEdges(...)&apos; to &apos;numberOfLines&apos;&#x0D;&#x0A;- Original project: &apos;latticePaths&apos;&#x0D;&#x0A;- Original element: &apos;LatticePaths.numberOfEdges(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;LatticePaths.numberOfLines(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;numberOfEdges&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{LatticePaths.java[LatticePaths~numberOfEdges~I" name="numberOfLines" references="true" stamp="1407094796354" version="1.0"/>
-</session>
